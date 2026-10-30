@@ -1,0 +1,46 @@
+# BrasilGuard — piloto em modo seguro (proposta, não ativada)
+# Este arquivo é um overlay para revisão humana. Não o confundir com harvey.local.yaml.
+persona:
+  name: "BrasilGuard SDR"
+  company: "BrasilGuard Sistemas"
+  role: "Assistente de Prospecção B2B"
+  tone: "professional, consultative, objective"
+product:
+  name: "Consultoria e automação empresarial BrasilGuard"
+  description: "Diagnóstico de processos e oportunidades de automação, sem prometer resultados não validados"
+  pricing: "Sob proposta"
+  key_benefits:
+    - "Mapeamento de gargalos operacionais"
+    - "Diagnóstico inicial personalizado"
+    - "Possíveis automações com supervisão humana"
+  offer:
+    primary: "Conversa de diagnóstico"
+    entry: "Análise inicial"
+    goal: "get_reply"
+icp:
+  industries:
+    - "Restaurantes"
+    - "Varejo"
+    - "Serviços empresariais"
+  company_size: "5-100 employees"
+  geography:
+    - "Rio de Janeiro, Brasil"
+channels:
+  email:
+    enabled: false # ativação sujeita a revisão de base legal, domínio e testes
+    provider: "gmail"
+    max_daily_sends: 0
+    require_approval: true
+    send_to_risky: false
+  linkedin:
+    enabled: false
+usage:
+  heartbeat_interval_minutes: 15
+  quiet_hours:
+    start: "22:00"
+    end: "08:00"
+    timezone: "America/Sao_Paulo"
+compliance:
+  do_not_contact: []
+  precleared:
+    enabled: false
